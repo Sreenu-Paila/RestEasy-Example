@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>RestEasy-Example</groupId>
 	<artifactId>RestEasy-Example</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -43,7 +42,34 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+			<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.1</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.shared</groupId>
+              <artifactId>maven-invoker</artifactId>
+              <version>2.2</version>
+            </dependency>
+          </dependencies>
+        </plugin>
 		</plugins>
 		<finalName>${project.artifactId}</finalName>
 	</build>
+	<scm> 
+		<developerConnection>scm:git:https://github.com/Sreenu-Paila/RestEasy-Example</developerConnection>
+    <tag>RestEasy-Example-0.0.1</tag>
+  </scm>
+
+  <distributionManagement>
+   <snapshotRepository>
+     <id>artifactory</id>
+     <url>C:/Users/ir17tx.AD/Sreenu/Softwares/apache-maven-3.3.9/conf/artifects</url>
+   </snapshotRepository>
+   <repository>
+     <id>artifactory</id>
+     <url>C:/Users/ir17tx.AD/Sreenu/Softwares/apache-maven-3.3.9/conf/artifects</url>
+   </repository>
+ </distributionManagement>
 </project>
