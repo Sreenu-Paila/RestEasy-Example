@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>RestEasy-Example</groupId>
 	<artifactId>RestEasy-Example</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -42,24 +42,13 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
-			<plugin>
-			  <groupId>org.apache.maven.plugins</groupId>
-			  <artifactId>maven-release-plugin</artifactId>
-			  <version>2.5.1</version>
-			  <dependencies>
-				<dependency>
-				  <groupId>org.apache.maven.shared</groupId>
-				  <artifactId>maven-invoker</artifactId>
-				  <version>2.2</version>
-				</dependency>
-			  </dependencies>
-        </plugin>
+			
 		</plugins>
 		<finalName>${project.artifactId}</finalName>
 	</build>
 	<scm> 
 		<developerConnection>scm:git:https://github.com/Sreenu-Paila/RestEasy-Example</developerConnection>
-    <tag>RestEasy-Example-0.0.3</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
