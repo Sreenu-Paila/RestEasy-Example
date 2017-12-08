@@ -64,12 +64,12 @@
 
   <distributionManagement>
    <snapshotRepository>
-     <id>artifactory</id>
-     <url>C:/Users/ir17tx.AD/Sreenu/Softwares/apache-maven-3.3.9/conf/artifects</url>
+     <id>artifactory-s</id>
+     <url>file://C:/Users/ir17tx.AD/Sreenu/Softwares/apache-maven-3.3.9/conf/artifects</url>
    </snapshotRepository>
    <repository>
-     <id>artifactory</id>
-     <url>C:/Users/ir17tx.AD/Sreenu/Softwares/apache-maven-3.3.9/conf/artifects</url>
+     <id>artifactory-r</id>
+     <url>file://C:/Users/ir17tx.AD/Sreenu/Softwares/apache-maven-3.3.9/conf/artifects</url>
    </repository>
  </distributionManagement>
 </project>
