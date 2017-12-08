@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>RestEasy-Example</groupId>
 	<artifactId>RestEasy-Example</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -59,7 +59,7 @@
 	</build>
 	<scm> 
 		<developerConnection>scm:git:https://github.com/Sreenu-Paila/RestEasy-Example</developerConnection>
-    <tag>HEAD</tag>
+    <tag>RestEasy-Example-0.0.2</tag>
   </scm>
 
   <distributionManagement>
